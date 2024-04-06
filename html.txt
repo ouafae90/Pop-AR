@@ -1,0 +1,178 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop&Art - Maquette</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <style>
+        /* Styles CSS */
+        .container {
+            width: 80%; /* Ajustez la largeur du conteneur selon vos besoins */
+            margin: 0 auto;
+            overflow: hidden; /* Clearfix */
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav {
+            float: right;
+        }
+
+        .logo {
+            float: left; /* Pour garder le logo à gauche */
+        }
+
+        .big-image {
+            border: 2px solid #ccc; /* Cadre pour la grande image */
+            padding: 10px;
+        }
+
+        /* Formulaire de contact */
+        #contact {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+        }
+
+        #contact form {
+            max-width: 400px; /* Ajustez la largeur du formulaire selon vos besoins */
+            margin: 0 auto;
+        }
+
+        #contact form div {
+            margin-bottom: 15px;
+        }
+
+        #contact form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact form input[type="text"],
+        #contact form input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contact form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contact form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#panier">Panier</a></li>
+                </ul>
+            </nav>
+            <div class="logo">Logo de l'entreprise</div>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <div class="container">
+            <div class="big-image">
+                <img src="chemin/vers/votre/grande-image.jpg" alt="Grande image">
+            </div>
+            <div class="presentation">
+                <h2>Présentation de l'entreprise</h2>
+                <p>Pop&Art est une entreprise innovante spécialisée dans la vente d'objets de collection artisanaux inspirés de la pop culture, notamment des mangas, des comic books, du cinéma et des séries télévisées. Fondée en juin 2023, notre entreprise a rapidement suscité l'intérêt du public grâce à son approche unique et à la qualité exceptionnelle de ses produits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="product">
+                <div class="product-image">Image du produit 1</div>
+                <div class="product-info">
+                    <h3>Nom du produit 1</h3>
+                    <p>Description du produit 1</p>
+                    <p>Prix: 19.99€</p>
+                    <button>Acheter</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">Image du produit 2</div>
+                <div class="product-info">
+                    <h3>Nom du produit 2</h3>
+                    <p>Description du produit 2</p>
+                    <p>Prix: 29.99€</p>
+                    <button>Acheter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Formulaire de contact</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Nom:</label><br>
+                    <input type="text" id="name" name="name" required style="width: 200px;">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required style="width: 200px;">
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required style="width: 300px;"></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">Liens vers les réseaux sociaux</div>
+            <div class="footer-info">Copyright et informations de contact</div>
+        </div>
+    </footer>
+</body>
